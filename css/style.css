@@ -72,6 +72,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 479px) {
+  .header__container {
+    min-height: 70px;
+  }
+}
+
 .header__logo {
   font-size: 16px;
   font-weight: 700;
@@ -94,9 +100,15 @@ body {
   }
 }
 
-/* отступ "безопасности" на узком экране
-и при кол-ве элементов меню ~> 8 */
+@media (max-width: 479px) {
+  .header__menu {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
 .menu {
+  /* отступ "безопасности" на узком экране
+  и при кол-ве элементов меню ~> 8 */
   padding: 5px 0px;
 }
 
@@ -120,4 +132,10 @@ body {
   то ничего не изменится */
   line-height: calc(24 / 14 * 100%);
   font-weight: 600;
+}
+
+@media (max-width: 479px) {
+  .menu_link {
+    font-size: 18px;
+  }
 }
