@@ -31,11 +31,14 @@ html,
 body {
   height: 100%;
   line-height: 1;
-  font-size: 16px;
-  color: #000;
+  font-size: 14px;
+  color: #252b42;
   font-family: Montserrat;
+  font-weight: 500;
 }
 
+/* ----------------------------------------------------------------------------- */
+/* SERVICE */
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -44,4 +47,48 @@ body {
 ._container {
   max-width: 1046px;
   margin: 0px auto;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* HEADER */
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  display: flex;
+  min-height: 104px;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.header__menu {
+  margin: 0px 0px 0px 133px;
+}
+
+.menu {}
+
+.menu_list {
+  display: flex;
+}
+
+.menu_item {}
+
+.menu_item:not(:last-child) {
+  margin: 0px 21px 0px 0px;
+}
+
+.menu_link {
+  color: #737373;
+  line-height: calc(24 / 14 * 100%);
+  font-weight: 600;
 }
