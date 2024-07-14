@@ -46,7 +46,14 @@ body {
 
 ._container {
   max-width: 1046px;
+  /* чтобы на узких экранах не было
+  прилипания шапки */
+  padding: 0px 15px;
+  /* чтобы контент был по середине */
   margin: 0px auto;
+  /* изменили, чтобы паддинги ВКЛЮЧАЛИСЬ
+  в общую ширину */
+  box-sizing: content-box;
 }
 
 /* ----------------------------------------------------------------------------- */
@@ -75,20 +82,42 @@ body {
   margin: 0px 0px 0px 133px;
 }
 
-.menu {}
+@media (max-width: 992px) {
+  .header__menu {
+    margin: 0px 0px 0px 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__menu {
+    margin: 0px 0px 0px 40px;
+  }
+}
+
+/* отступ "безопасности" на узком экране
+и при кол-ве элементов меню ~> 8 */
+.menu {
+  padding: 5px 0px;
+}
 
 .menu_list {
   display: flex;
+  /* чтобы на узких экранах флексы стакались */
+  flex-wrap: wrap;
 }
 
 .menu_item {}
 
+/* чтобы отступы были у всего, кроме
+последнего элемента */
 .menu_item:not(:last-child) {
   margin: 0px 21px 0px 0px;
 }
 
 .menu_link {
   color: #737373;
+  /* если перенести в menu__item,
+  то ничего не изменится */
   line-height: calc(24 / 14 * 100%);
   font-weight: 600;
 }
