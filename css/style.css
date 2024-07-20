@@ -145,10 +145,22 @@ body {
 }
 
 /* ----------------------------------------------------------------------------- */
-/* MAIN */
-.main {
+/* PAGE */
+.page {
   flex: 1 1 auto;
 }
+
+.page__main-block {}
+
+.main-block {}
+
+.main-block__container {}
+
+.main-block__title {}
+
+.main-block__text {}
+
+.main-block__buttons {}
 
 /* ----------------------------------------------------------------------------- */
 /* FOOTER */
