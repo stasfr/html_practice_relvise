@@ -313,15 +313,18 @@ body {
 
 .services__container {}
 
-.services__body {
-  display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
+.services__body {}
+
+@media (min-width:670px) {
+  .services__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .services__column {
-  padding-left: 15px;
-  padding-right: 15px;
   /* альтернатива:
   flex-grow: 0;
   flex-shrink: 1;
@@ -329,11 +332,46 @@ body {
   flex: 0 1 33.333%;
 }
 
+@media (min-width:670px) {
+  .services__column {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width:992px) {
+  .services__column:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .services__column {
+    flex: 0 1 50%;
+  }
+
+  /* вторая имба, чтобы 3ий элемент
+  растягивался по в полную ширину контейнера */
+  .services__column:last-child {
+    flex: 1 1 100%;
+  }
+}
+
 .services__item {
+  /* посчитал ширину при 992 px
+  (при таком разрешении блоки начинают сужаться)
+  сделал ее минимальной и выше накинул
+  flex wrap: wrap, чтобы при шрине блока
+  меньше 300px -> флексы врапались ниже*/
+  /* min-width: 300px; */
   height: 100%;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   background-color: #FFFFFF;
   padding: 35px;
+}
+
+@media (max-width:479px) {
+  .services__item {
+    padding: 25px;
+  }
 }
 
 .item-service {}
