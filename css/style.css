@@ -195,6 +195,13 @@ body {
   }
 }
 
+@media (max-width: 479px) {
+  .main-block__body {
+    padding-top: 115px;
+    padding-bottom: 160px;
+  }
+}
+
 /* все элементы 1 уровня в __body
 за исключением последнего элемента */
 .main-block__body>*:not(:last-child) {
