@@ -178,6 +178,12 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 992px) {
+  .main-block__body {
+    padding-top: 120px;
+  }
+}
+
 /* все элементы 1 уровня в __body
 за исключением последнего элемента */
 .main-block__body>*:not(:last-child) {
@@ -192,6 +198,12 @@ body {
   letter-spacing: 0.2px;
 }
 
+@media (max-width: 479px) {
+  .main-block__title {
+    font-size: 42px;
+  }
+}
+
 .main-block__text {
   color: #737373;
   font-weight: 500;
@@ -200,8 +212,18 @@ body {
   line-height: calc(30 / 20 * 100%);
 }
 
+@media (max-width:992px) {
+  .main-block__text {
+    color: #252b42;
+  }
+}
+
 .main-block__buttons {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  /* чтобы были отступы на маленьком экране */
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .main-block__button {
@@ -214,17 +236,32 @@ body {
   min-height: 48px;
   letter-spacing: 0.2px;
   font-size: 14px;
-
   font-weight: 700;
   line-height: calc(28 / 14 * 100%);
   /* вообще не нужно для макета,
   накинули для ситуации,
   когда текста много будет */
   text-align: center;
+  /* чтобы были отступы на маленьком экране,
+  но пр этом не съехали на большом*/
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.main-block__button:not(:last-child) {
-  margin-right: 10px;
+/* имба, кнопки расширяются под размер экрана */
+@media (max-width:479px) {
+  .main-block__button {
+    flex: 1 1 100%;
+  }
+}
+
+/* mobile first
+отступ только на больши экранах,
+сделал после имбы выше */
+@media (min-width:479px) {
+  .main-block__button:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .main-block__button_orange {
@@ -243,6 +280,19 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+/* чтобы люди на фотке не съезжали */
+@media (max-width: 1300px) {
+  .main-block__image img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-block__image {
+    opacity: 0.5;
+  }
 }
 
 /* ----------------------------------------------------------------------------- */
