@@ -188,7 +188,8 @@ body {
   font-size: 58px;
   max-width: 509px;
   font-weight: 800;
-  line-height: calc(80 / 58 * 100%)
+  line-height: calc(80 / 58 * 100%);
+  letter-spacing: 0.2px;
 }
 
 .main-block__text {
@@ -199,7 +200,42 @@ body {
   line-height: calc(30 / 20 * 100%);
 }
 
-.main-block__buttons {}
+.main-block__buttons {
+  display: inline-flex;
+}
+
+.main-block__button {
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width не нужен, так как накинули padding */
+  padding: 10px 36px;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+
+  font-weight: 700;
+  line-height: calc(28 / 14 * 100%);
+  /* вообще не нужно для макета,
+  накинули для ситуации,
+  когда текста много будет */
+  text-align: center;
+}
+
+.main-block__button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main-block__button_orange {
+  color: #FFFFFF;
+  background: #FF7B47;
+}
+
+.main-block__button_border {
+  color: #0D5C63;
+  border: 1px solid #0D5C63;
+}
 
 .main-block__image {
   position: absolute;
