@@ -176,6 +176,8 @@ body {
 
 .page__advantages {}
 
+.page__advices {}
+
 /* ----------------------------------------------------------------------------- */
 /* HEADER BLOCK */
 
@@ -547,6 +549,113 @@ body {
   letter-spacing: 0.1px;
   line-height: calc(24 / 16 * 100%);
   font-size: 16px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ADVICES */
+
+.advices {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width:767px) {
+  .advices {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width:992px) {
+  .advices {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.advices__container {}
+
+.advices__header {
+  padding: 45px 0px;
+}
+
+@media (max-width:992px) {
+  .advices__header {
+    padding: 35px 0px;
+  }
+}
+
+.advices__body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+}
+
+.advices__column {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  flex: 0 1 25%;
+}
+
+@media (max-width:1075px) {
+  .advices__column {
+    flex: 0 1 50%;
+  }
+}
+
+@media (max-width:560px) {
+  .advices__column {
+    flex: 0 1 100%;
+  }
+}
+
+.advices__item {}
+
+.item-advice {
+  background-color: #FFFFFF;
+  /* это и flex в item-advice__header
+  нужны, чтобы картинка всегда была внизу
+  своеобразный лайфхоку
+  вместо четко заданной ширины - прям норм*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-advice__header {
+  flex: 1 1 auto;
+}
+
+.advice-header {
+  padding: 30px;
+}
+
+.advice-header>*:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.advice-header__title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: calc(24 / 16 * 100%);
+}
+
+.advice-header__text {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: calc(20 / 14 * 100%);
+}
+
+.item-advice__img {
+  display: block;
+  /* картинка на макете размером
+  230 в ширину и 138 в высоту.
+  делим в на ш и умножаем на 100*/
+  padding-bottom: 60%;
 }
 
 /* ----------------------------------------------------------------------------- */
