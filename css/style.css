@@ -136,7 +136,7 @@ body {
   flex-wrap: wrap;
 }
 
-.menu_item {}
+/* .menu_item {} */
 
 /* чтобы отступы были у всего, кроме
 последнего элемента */
@@ -164,7 +164,7 @@ body {
   flex: 1 1 auto;
 }
 
-.page__main-block {}
+/* .page__main-block {} */
 
 .page__services {
   /* пока не сделал position relative
@@ -174,11 +174,11 @@ body {
   margin-top: -111px;
 }
 
-.page__advantages {}
+/* .page__advantages {}
 
 .page__advices {}
 
-.page__whoweare {}
+.page__whoweare {} */
 
 /* ----------------------------------------------------------------------------- */
 /* HEADER BLOCK */
@@ -221,7 +221,7 @@ body {
   position: relative;
 }
 
-.main-block__container {}
+/* .main-block__container {} */
 
 .main-block__body {
   padding-top: 184px;
@@ -357,11 +357,11 @@ body {
 /* ----------------------------------------------------------------------------- */
 /* SERVICES BLOCK */
 
-.services {}
+/* .services {}
 
 .services__container {}
 
-.services__body {}
+.services__body {} */
 
 @media (min-width:670px) {
   .services__body {
@@ -422,7 +422,7 @@ body {
   }
 }
 
-.item-service {}
+/* .item-service {} */
 
 .item-service_green {
   background-color: #0D5C63
@@ -440,7 +440,7 @@ body {
   margin-bottom: 10px;
 }
 
-.item-service__icon {}
+/* .item-service__icon {} */
 
 .item-service__title {
   font-weight: 700;
@@ -478,7 +478,7 @@ body {
   }
 }
 
-.advantages__container {}
+/* .advantages__container {} */
 
 .advantages__header {
   margin-bottom: 50px;
@@ -527,7 +527,7 @@ body {
   font-weight: 700;
 }
 
-.item-advantage {}
+/* .item-advantage {} */
 
 .item-advantage>*:not(:last-child) {
   margin-bottom: 10px;
@@ -575,7 +575,7 @@ body {
   }
 }
 
-.advices__container {}
+/* .advices__container {} */
 
 .advices__header {
   padding: 45px 0px;
@@ -614,7 +614,7 @@ body {
   }
 }
 
-.advices__item {}
+/* .advices__item {} */
 
 .item-advice {
   background-color: #FFFFFF;
@@ -682,7 +682,7 @@ body {
   }
 }
 
-.whoweare__container {}
+/* .whoweare__container {} */
 
 .whoweare__header {
   padding: 45px 0px;
@@ -776,7 +776,7 @@ body {
   color: #737373;
 }
 
-.whoweare__items {}
+/* .whoweare__items {} */
 
 .whoweare__item {
   margin-top: 30px;
@@ -786,7 +786,7 @@ body {
   display: flex;
 }
 
-.item-whoweare__icon {}
+/* .item-whoweare__icon {} */
 
 .item-whoweare__body {
   margin-left: 20px;
