@@ -858,7 +858,20 @@ body {
 /* ----------------------------------------------------------------------------- */
 /* SUBSCRIBE */
 
-.subscribe {}
+.subscribe {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.subscribe::before {
+  background: #252B42;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 77px;
+  left: 0;
+}
 
 .subscribe__container {}
 
@@ -870,6 +883,8 @@ body {
   background-color: #17213C;
   border-radius: 2px;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .subscribe__title {
