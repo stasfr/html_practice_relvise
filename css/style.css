@@ -180,7 +180,7 @@ body {
 
 /* .page__whoweare {} */
 
-/* .page__newsletter {} */
+/* .page__client {} */
 
 /* ----------------------------------------------------------------------------- */
 /* HEADER BLOCK */
@@ -813,14 +813,13 @@ body {
 }
 
 /* ----------------------------------------------------------------------------- */
-/* NEWSLETTER */
+/* CLIENT */
 
+.client {}
 
-.newsletter {}
+.client__container {}
 
-.newsletter__container {}
-
-.newsletter__partners {
+.client__partners {
   padding: 50px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -841,7 +840,7 @@ body {
     flex: 0 1 33.3%;
   }
 
-  .newsletter__partners {
+  .client__partners {
     padding: 30px 0px;
   }
 }
@@ -851,110 +850,20 @@ body {
     flex: 0 1 100%;
   }
 
-  .newsletter__partners {
+  .client__partners {
     padding: 10px 0px;
   }
 }
 
-.partners__items {}
+/* .partners__items {}
 
-.item-partner {}
+.item-partner {} */
 
 .item-partner__icon {
   height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.newsletter__subscribtion {}
-
-.subscribtion {
-  background-color: #17213C;
-  padding: 30px 50px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: -62px;
-}
-
-@media (max-width:590px) {
-  .subscribtion {
-    flex-direction: column;
-  }
-}
-
-.subscribtion__text {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.1px;
-  line-height: calc(32 / 24 * 100%);
-}
-
-@media (max-width:1024px) {
-  .subscribtion__text {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width:450px) {
-  .subscribtion__text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width:330px) {
-  .subscribtion__text {
-    font-size: 16px;
-  }
-}
-
-.subscribtion__form {
-  display: flex;
-  min-width: 450px;
-  border: 0.5px solid #FFFFFF;
-  border-radius: 5px;
-  min-height: 60px;
-}
-
-.form__input {
-  flex: 1 1 auto;
-  border-radius: 5px;
-  color: #737373;
-  padding-left: 15px;
-}
-
-.form__btn {
-  min-width: 117px;
-  border-radius: 5px;
-  background-color: #FF7B47;
-  color: #FFFFFF;
-  margin-left: -10px;
-}
-
-@media (max-width:1024px) {
-  .subscribtion__text {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width:450px) {
-  .subscribtion__text {
-    font-size: 20px;
-  }
-}
-
-@media (max-width:330px) {
-  .subscribtion__text {
-    font-size: 16px;
-  }
-}
-
-.newsletter__footer {
-  width: 100vw;
-  min-height: 77px;
-  background-color: #252B42;
-  right: 0;
 }
 
 /* ----------------------------------------------------------------------------- */
