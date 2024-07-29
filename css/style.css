@@ -806,6 +806,10 @@ body {
   font-weight: 600;
   letter-spacing: 0.2px;
   line-height: calc(24 / 14 * 100%);
+  white-space: nowrap;
+  width: 225px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* ----------------------------------------------------------------------------- */
