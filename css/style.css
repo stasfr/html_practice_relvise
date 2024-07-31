@@ -823,7 +823,7 @@ body {
   padding: 58px 0px;
 }
 
-.clients__container {}
+/* .clients__container {} */
 
 .clients__items {
   display: flex;
@@ -873,7 +873,7 @@ body {
   left: 0;
 }
 
-.subscribe__container {}
+/* .subscribe__container {} */
 
 .subscribe__body {
   padding: 30px 50px;
