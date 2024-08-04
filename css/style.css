@@ -188,6 +188,8 @@ body {
 
 /* .page__contacts {} */
 
+/* .page__contact_us {} */
+
 /* ----------------------------------------------------------------------------- */
 /* HEADER BLOCK */
 
@@ -1052,6 +1054,61 @@ body {
 .contact-item__button-black {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* CONTACT US */
+
+.contact_us {}
+
+.contact_us__container {
+  padding: 40px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+@media (max-width: 1020px) {
+  .contact_us__container {
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact_us__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact_us__container>*:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.contact_us__body {}
+
+.contact_us__title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: calc(32 / 24 * 100%);
+}
+
+.contact_us__sub-title {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: calc(20 / 14 * 100%);
+  color: #737373
+}
+
+.contact_us__button {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: calc(28 / 14 * 100%);
+  color: #FFFFFF;
+  background-color: #FF7B47;
+  padding: 15px 40px;
+  border-radius: 5px
 }
 
 /* ----------------------------------------------------------------------------- */
