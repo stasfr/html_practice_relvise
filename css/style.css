@@ -1037,6 +1037,12 @@ body {
   max-width: 200px;
 }
 
+.contact-item__button:hover {
+  background-color: #FF7B47;
+  color: #FFFFFF;
+  transition: all ease-in 0.3s;
+}
+
 .contact-item__card-black {
   background-color: #252B42
 }
@@ -1054,6 +1060,12 @@ body {
 .contact-item__button-black {
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.contact-item__button-black:hover {
+  background-color: #FFFFFF;
+  color: #252B42;
+  transition: all ease-in 0.3s;
 }
 
 /* ----------------------------------------------------------------------------- */
