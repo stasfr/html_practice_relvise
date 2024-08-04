@@ -1126,3 +1126,72 @@ body {
 /* ----------------------------------------------------------------------------- */
 /* FOOTER */
 .footer {}
+
+.footer_top {
+  padding: 50px 0px;
+  background-color: #17213C;
+  color: #FFFFFF
+}
+
+.footer_top__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_top__column {}
+
+.footer_top__column_title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: calc(24 / 16 * 100%);
+  margin-bottom: 20px;
+}
+
+.footer_top__column_items {}
+
+.footer_top__column_item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer_top__column_item {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: calc(24 / 14 * 100%);
+  display: flex;
+}
+
+.footer_top__column_item img {
+  margin-right: 10px;
+}
+
+.footer_top__column_item p {
+  display: flex;
+  align-items: center;
+}
+
+.footer_bottom {
+  padding: 25px 0px;
+}
+
+.footer_bottom__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_bottom__title {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: calc(24 / 14 * 100%);
+  color: #737373
+}
+
+.footer_bottom__socials {
+  display: flex;
+}
+
+.footer_bottom__socials_item {}
+
+.footer_bottom__socials_item:not(:last-child) {
+  margin-right: 20px;
+}
