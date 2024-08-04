@@ -1130,15 +1130,36 @@ body {
 .footer_top {
   padding: 50px 0px;
   background-color: #17213C;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
 .footer_top__container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: -25px;
 }
 
-.footer_top__column {}
+@media (max-width:1000px) {
+  .footer_top__column {
+    flex: 0 1 25%;
+  }
+}
+
+@media (max-width:750px) {
+  .footer_top__container {
+    flex-direction: column;
+  }
+
+  .footer_top__column {
+    flex: 1 1 50%;
+    width: 225px;
+  }
+}
+
+.footer_top__column {
+  margin-bottom: 25px;
+}
 
 .footer_top__column_title {
   font-weight: 700;
